@@ -1,4 +1,4 @@
-# Advanced Comics Converter (ACC)
+# Advanced Comics Converter (ACC-Windows)
 
 > [🇮🇹 Italiano](#italiano) | [🇬🇧 English](#english)
 
@@ -53,15 +53,6 @@ Advanced Comics Converter (ACC) è un potente strumento multi-piattaforma per co
 - **Ghostscript** o **PDFtk** (per merge PDF)
 - **7-Zip**, **WinRAR** o **unrar** (per file CBR)
 
-#### Linux
-- **Python 3**
-- **ImageMagick**
-- **img2pdf**
-- **pdftk** o **ghostscript**
-- **unzip**
-- **rar**, **unar**, **unrar** o **7z** (per CBR)
-- **GNU Parallel** (opzionale ma raccomandato)
-- **zenity** (per GUI)
 
 ### 📥 Installazione
 
@@ -183,15 +174,6 @@ PowerShell -ExecutionPolicy Bypass -File .\Advanced-Comics-Converter-GUI.ps1
 - Trascina file CBZ/CBR sull'area grigia nella GUI, oppure
 - Usa i bottoni "Sfoglia File" o "Sfoglia Cartella"
 
-### 📊 Performance
-
-**Esempio con 24 file (117 pagine ciascuno):**
-
-| Metodo | Tempo | Speedup |
-|--------|-------|---------|
-| Seriale (1 thread) | ~18 minuti | 1x |
-| Parallelo (4 thread) | ~5 minuti | 3.6x |
-| Parallelo (8 thread) | ~2.5 minuti | 7.2x |
 
 ### 🐛 Troubleshooting
 
