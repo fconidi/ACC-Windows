@@ -59,37 +59,18 @@ Advanced Comics Converter (ACC) è un potente strumento multi-piattaforma per co
 #### Windows
 
 **Metodo Automatico:**
-```powershell
+```powershell come Amministratore
 # Come Amministratore
 PowerShell -ExecutionPolicy Bypass -File .\Install-Dependencies-Fixed.ps1
 ```
 
 **Verifica Installazione:**
 ```powershell
-.\Check-Dependencies.ps1
+PowerShell -ExecutionPolicy Bypass -File.\Check-Dependencies.ps1
 
 
-## Errori di Policies
+Se lo script fallisce installare manualmente le dipendenze, lo script chiederà se  aprire le pagine di download.
 
-
-in caso di errore tipo sotto:
-
-PS C:\Users\......> .\Install-Dependencies.ps1
-.\Install-Dependencies.ps1 Install-Dependencies.ps1 cannot be loaded because
-running scripts is disabled on this system. For more information, see about_Execution_Policies at
-https:/go.microsoft.com/fwlink/?LinkID=135170.
-At line:1 char:1
-+ .\Install-Dependencies.ps1
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
-    + FullyQualifiedErrorId : UnauthorizedAccess
-
-Gli script vanno lanciati da powershell con la sintassi:
-
-PowerShell -ExecutionPolicy Bypass -File .\Advanced-Comics-Converter-GUI.ps1
-PowerShell -ExecutionPolicy Bypass -File .\Advanced-Comics-Converter-Simple.ps1
-PowerShell -ExecutionPolicy Bypass -File .\Install-Dependencies.ps1
-PowerShell -ExecutionPolicy Bypass -File .\Check-Dependencies.ps1
 
 ### Metodo 2: Installazione Manuale
 
@@ -160,7 +141,7 @@ PowerShell -ExecutionPolicy Bypass -File .\Advanced-Comics-Converter-Simple.ps1
 
 **Specificando Cartella:**
 ```powershell
-.\Advanced-Comics-Converter-Simple.ps1 -Path "C:\Fumetti"
+PowerShell -ExecutionPolicy Bypass -File .\Advanced-Comics-Converter-Simple.ps1 -Path "C:\Fumetti"
 ```
 
 #### Windows - Versione GUI
@@ -180,6 +161,26 @@ PowerShell -ExecutionPolicy Bypass -File .\Advanced-Comics-Converter-GUI.ps1
 **Problema: "Execution Policy"**
 ```powershell
 PowerShell -ExecutionPolicy Bypass -File .\script.ps1
+
+in caso di errore tipo sotto:
+
+PS C:\Users\......> .\Install-Dependencies.ps1
+.\Install-Dependencies.ps1 Install-Dependencies.ps1 cannot be loaded because
+running scripts is disabled on this system. For more information, see about_Execution_Policies at
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ .\Install-Dependencies.ps1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+
+Gli script vanno lanciati da powershell con la sintassi:
+
+PowerShell -ExecutionPolicy Bypass -File .\Advanced-Comics-Converter-GUI.ps1
+PowerShell -ExecutionPolicy Bypass -File .\Advanced-Comics-Converter-Simple.ps1
+PowerShell -ExecutionPolicy Bypass -File .\Install-Dependencies.ps1
+PowerShell -ExecutionPolicy Bypass -File .\Check-Dependencies.ps1
+
 ```
 
 **Problema: "Python non trovato"**
@@ -196,7 +197,7 @@ PowerShell -ExecutionPolicy Bypass -File .\script.ps1
 
 ### 📖 Description
 
-Advanced Comics Converter (ACC) is a powerful cross-platform tool for converting digital comics (CBZ/CBR) to high-quality PDFs. Features parallel processing, drag-and-drop GUI interface, and works on both Linux and Windows.
+Advanced Comics Converter (ACC-Windows) is a powerful cross-platform tool for converting digital comics (CBZ/CBR) to high-quality PDFs. Features parallel processing, drag-and-drop GUI interface, and works on both Linux and Windows.
 
 ### ✨ Key Features
 
@@ -235,7 +236,7 @@ PowerShell -ExecutionPolicy Bypass -File .\Install-Dependencies-Fixed.ps1
 
 **Verify Installation:**
 ```powershell
-.\Check-Dependencies.ps1
+PowerShell -ExecutionPolicy Bypass -File .\Check-Dependencies.ps1
 ```
 
 ### 🚀 Usage
@@ -254,15 +255,7 @@ PowerShell -ExecutionPolicy Bypass -File .\Advanced-Comics-Converter-GUI.ps1
 
 Then drag CBZ/CBR files onto the gray area or use the browse buttons.
 
-### 📊 Performance
 
-**Example with 24 files (117 pages each):**
-
-| Method | Time | Speedup |
-|--------|------|---------|
-| Serial (1 thread) | ~18 minutes | 1x |
-| Parallel (4 threads) | ~5 minutes | 3.6x |
-| Parallel (8 threads) | ~2.5 minutes | 7.2x |
 
 ### 👤 Author
 
