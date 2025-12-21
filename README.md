@@ -221,7 +221,7 @@ Advanced Comics Converter for Windows (ACC-Windows) is a powerful cross-platform
 #### 1. **Advanced-Comics-Converter-Simple.ps1** 
 - ✅ Simple command-line interface
 - ✅ Folder selection dialog
-- ✅ Automatic parallel processing (80% CPU)
+- ✅ Automatic parallel processing (80% CPU default)
 - ✅ Guaranteed stability
 
 #### 2. **Advanced-Comics-Converter-GUI.ps1** (Recommended)
@@ -251,7 +251,7 @@ Advanced Comics Converter for Windows (ACC-Windows) is a powerful cross-platform
 **Automatic Method:**
 ```powershell
 # As Administrator
-PowerShell -ExecutionPolicy Bypass -File .\Install-Dependencies-Fixed.ps1
+PowerShell -ExecutionPolicy Bypass -File .\Install-Dependencies.ps1
 ```
 
 **Verify Installation:**
