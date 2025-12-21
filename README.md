@@ -72,6 +72,7 @@ DOWNLOAD
 
 https://buymeacoffee.com/fconidi/e/491165
 ---
+---
 
 <img width="230" height="230" alt="ACC-W-QR" src="https://github.com/user-attachments/assets/0f4c13b6-bf73-4fd8-a0e0-a8fac2ad4fa8" />
 
