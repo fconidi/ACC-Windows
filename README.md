@@ -1,4 +1,4 @@
-# Advanced Comics Converter (ACC-Windows)
+# Advanced Comics Converter (ACC-W)
 
 > [🇮🇹 Italiano](#italiano) | [🇬🇧 English](#english)
 
@@ -204,7 +204,7 @@ PowerShell -ExecutionPolicy Bypass -File .\Check-Dependencies.ps1
 
 ### 📖 Description
 
-Advanced Comics Converter for Windows (ACC-Windows) is a powerful cross-platform tool for converting digital comics (CBZ/CBR) to high-quality PDFs. Features parallel processing, drag-and-drop GUI interface.
+Advanced Comics Converter for Windows (ACC-W) is a powerful cross-platform tool for converting digital comics (CBZ/CBR) to high-quality PDFs. Features parallel processing, drag-and-drop GUI interface.
 
 ### ✨ Key Features
 
