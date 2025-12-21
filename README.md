@@ -24,7 +24,7 @@ Advanced Comics Converter per Windows (ACC-Windows) è un potente strumento mult
 - **🔧 Gestione Errori Robusta**: Continua anche se alcuni file falliscono
 - **📊 Log Dettagliati**: Traccia completa di tutte le operazioni
 - **⚡ Skip Intelligente**: Salta file già convertiti
-- **🎯 Tre Versioni Disponibili**: Simple (CLI), GUI e Linux
+- **🎯 Due Versioni Disponibili**: Simple (CLI), GUI.
 
 ### 📦 Versioni Disponibili
 
