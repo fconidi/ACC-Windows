@@ -285,4 +285,4 @@ Then drag CBZ/CBR files onto the gray area or use the browse buttons.
 
 ### 👤 Author
 
-**Franco Conidi aka Edmond** - Creator of SysLinuxOS and Linux blogger
+Franco Conidi aka Edmond - SysLinuxOS System Integrator, Network Engineer, IT Consultant Blogger Linux Developer https://francoconidi.it https://syslinuxos.com
