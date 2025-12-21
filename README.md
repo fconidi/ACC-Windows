@@ -66,7 +66,17 @@ Advanced Comics Converter per Windows (ACC-Windows) è un potente strumento mult
 - **Ghostscript** o **PDFtk** (per merge PDF)
 - **7-Zip**, **WinRAR** o **unrar** (per file CBR)
 
+----
+----
+DOWNLOAD
 
+https://buymeacoffee.com/fconidi/e/491165
+---
+
+<img width="230" height="230" alt="ACC-W-QR" src="https://github.com/user-attachments/assets/0f4c13b6-bf73-4fd8-a0e0-a8fac2ad4fa8" />
+
+---
+---
 ### 📥 Installazione
 
 #### Windows
