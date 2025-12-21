@@ -68,7 +68,7 @@ Advanced Comics Converter per Windows (ACC-Windows) è un potente strumento mult
 **Metodo Automatico:**
 ```powershell come Amministratore
 # Come Amministratore
-PowerShell -ExecutionPolicy Bypass -File .\Install-Dependencies-Fixed.ps1
+PowerShell -ExecutionPolicy Bypass -File .\Install-Dependencies.ps1
 ```
 
 **Verifica Installazione:**
