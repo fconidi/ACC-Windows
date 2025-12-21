@@ -8,7 +8,7 @@
 
 ### 📖 Descrizione
 
-Advanced Comics Converter per Windows (ACC-Windows) è un potente strumento multi-piattaforma per convertire fumetti digitali (CBZ/CBR) in PDF di alta qualità. Supporta processing parallelo, interfaccia grafica drag-and-drop e funziona sia su Linux che Windows.
+Advanced Comics Converter per Windows (ACC-Windows) è un potente strumento multi-piattaforma per convertire fumetti digitali (CBZ/CBR) in PDF di alta qualità. Supporta processing parallelo, interfaccia grafica drag-and-drop.
 
 ### ✨ Caratteristiche Principali
 
@@ -40,12 +40,16 @@ Advanced Comics Converter per Windows (ACC-Windows) è un potente strumento mult
 
 #### 3. **Install-Dependencies.ps1**
 - ✅ Script PowerShell per dipendenze (se mancanti)
+- Richiede esecuzione come Amministratore
 - ✅ Chocolatey (package manager)
 - ✅ Python 3
 - ✅ ImageMagick
 - ✅ Ghostscript (per merge PDF)
 - ✅ 7-Zip (per estrazione CBR)
 - ✅ img2pdf (modulo Python)
+
+#### 4. **Check-Dependencies.ps1**
+- ✅ Verifica dipendenze
 
 ### 🔧 Requisiti
 
@@ -200,7 +204,7 @@ PowerShell -ExecutionPolicy Bypass -File .\Check-Dependencies.ps1
 
 ### 📖 Description
 
-Advanced Comics Converter (ACC-Windows) is a powerful cross-platform tool for converting digital comics (CBZ/CBR) to high-quality PDFs. Features parallel processing, drag-and-drop GUI interface, and works on both Linux and Windows.
+Advanced Comics Converter for Windows (ACC-Windows) is a powerful cross-platform tool for converting digital comics (CBZ/CBR) to high-quality PDFs. Features parallel processing, drag-and-drop GUI interface.
 
 ### ✨ Key Features
 
@@ -214,18 +218,31 @@ Advanced Comics Converter (ACC-Windows) is a powerful cross-platform tool for co
 
 ### 📦 Available Versions
 
-#### 1. **Advanced-Comics-Converter-Simple.ps1** (Recommended)
+#### 1. **Advanced-Comics-Converter-Simple.ps1** 
 - ✅ Simple command-line interface
 - ✅ Folder selection dialog
 - ✅ Automatic parallel processing (80% CPU)
 - ✅ Guaranteed stability
 
-#### 2. **Advanced-Comics-Converter-GUI.ps1**
+#### 2. **Advanced-Comics-Converter-GUI.ps1** (Recommended)
 - ✅ Complete graphical interface
 - ✅ Drag and drop files/folders
 - ✅ Visual file list
 - ✅ Real-time progress bar
 - ✅ Immediate closing (background cleanup)
+
+#### 3. **Install-Dependencies.ps1**
+- ✅ Script PowerShell for missing dependencies
+- Requires admin rights
+- ✅ Chocolatey (package manager)
+- ✅ Python 3
+- ✅ ImageMagick
+- ✅ Ghostscript (per merge PDF)
+- ✅ 7-Zip (per estrazione CBR)
+- ✅ img2pdf (modulo Python)
+
+#### 4. **Check-Dependencies.ps1**
+- ✅ Check dependencies
 
 ### 📥 Installation
 
