@@ -1,4 +1,4 @@
-# Advanced Comics Converter — ACC-Windows 2.2.1
+# Advanced Comics Converter — ACC-Windows 2.2.2
 
 [Italiano](#italiano) | [English](#english)
 
@@ -7,7 +7,7 @@ Converts **CBZ and CBR comics to PDF** through a Windows graphical interface.
 
 ## Download
 
-**ACC-Windows-2.2.1-win64.exe** è disponibile su Buy Me a Coffee / is available on Buy Me a Coffee:
+**ACC-Windows-2.2.2-win64.exe** è disponibile su Buy Me a Coffee / is available on Buy Me a Coffee:
 
 https://buymeacoffee.com/fconidi/e/491165
 
@@ -15,9 +15,9 @@ https://buymeacoffee.com/fconidi/e/491165
 
 ## Italiano
 
-### Versione 2.2.1
+### Versione 2.2.2
 
-La versione portatile include Python, i moduli per la creazione dei PDF, `rarfile` e 7-Zip per leggere i CBR. Basta avviare il file EXE: non occorre installare dipendenze, usare pip o configurare il PATH. Le conversioni avvengono sul computer e non richiedono una connessione Internet.
+La versione portatile include Python, i moduli per la creazione dei PDF, `rarfile` e 7-Zip per leggere i CBR. Basta avviare il file EXE: non occorre installare dipendenze, usare pip o configurare il PATH. Le conversioni avvengono sul computer e non richiedono una connessione Internet. Il motore riconosce ZIP e RAR dal contenuto anche quando un file `.cbz` contiene RAR o un `.cbr` contiene ZIP, senza modificare l’originale.
 
 
 ### Requisiti
@@ -29,7 +29,7 @@ La versione portatile include Python, i moduli per la creazione dei PDF, `rarfil
 
 ### Avvio rapido
 
-1. Scarica **ACC-Windows-2.2.1-win64.exe** dal link Buy Me a Coffee qui sopra. Se il download è uno ZIP, estrailo prima.
+1. Scarica **ACC-Windows-2.2.2-win64.exe** dalla pagina Buy Me a Coffee qui sopra. Se il download è uno ZIP, estrailo prima.
 2. Salva l'EXE in una cartella a tua scelta.
 3. Fai doppio clic sull'EXE **come utente normale** e attendi l'apertura della finestra.
 4. Trascina un fumetto CBZ o CBR nella finestra e premi **Converti**.
@@ -76,7 +76,7 @@ L'app riconosce automaticamente la lingua dell'interfaccia Windows e supporta **
 | --- | --- |
 | Il trascinamento non funziona | Avvia l'EXE come utente normale. Puoi anche usare Aggiungi file o Aggiungi cartella. |
 | L'EXE non apre la finestra o mostra un errore | Attendi la preparazione iniziale; controlla il messaggio e il log di avvio indicato sotto. |
-| Compare Python o rarfile mancante | Verifica di avere avviato l'EXE 2.2.1 scaricato, che include questi componenti. Le istruzioni di installazione degli script precedenti non servono per questo EXE. |
+| Compare Python o rarfile mancante | Verifica di avere avviato l'EXE 2.2.2 scaricato, che include questi componenti. Le istruzioni di installazione degli script precedenti non servono per questo EXE. |
 | Un fumetto fallisce | Seleziona la riga e apri il log. Controlla che l'archivio sia integro, non cifrato e contenga immagini leggibili. |
 | Il PDF esiste già | Controlla se è Già verificato; per ricrearlo abilita Sostituisci PDF esistenti. |
 | Destinazione non scrivibile o spazio insufficiente | Scegli una cartella scrivibile e libera spazio sul disco di destinazione. |
@@ -95,11 +95,13 @@ Per segnalare un problema, indica versione dell'app, versione di Windows, format
 
 Per aggiornare, chiudi il programma e usa il nuovo EXE scaricato da Buy Me a Coffee. I fumetti e i PDF già salvati restano nelle rispettive cartelle.
 
-Gli script `Install-Dependencies.ps1` e `Check-Dependencies.ps1` presenti nel repository appartengono alla distribuzione precedente. Per la versione portatile 2.2.1 segui questa guida: Python, moduli PDF e decoder CBR sono già inclusi. ImageMagick, Ghostscript e PDFtk non sono necessari al nuovo motore.
+Gli script `Install-Dependencies.ps1` e `Check-Dependencies.ps1` presenti nel repository appartengono alla distribuzione precedente. Per la versione portatile 2.2.2 segui questa guida: Python, moduli PDF e decoder CBR sono già inclusi. ImageMagick, Ghostscript e PDFtk non sono necessari al nuovo motore.
 
 ## English
 
-### Version 2.2.1
+### Version 2.2.2
+
+ZIP and RAR are detected from file contents even when the CBZ/CBR extension is swapped. The original archive is not changed.
 
 The portable executable includes Python, the PDF modules, `rarfile` and 7-Zip for CBR decoding. Conversion runs locally and works offline. No dependency installation, pip commands or PATH configuration are required.
 
@@ -108,7 +110,7 @@ The portable executable includes Python, the PDF modules, `rarfile` and 7-Zip fo
 
 You need **64-bit (x64) Windows 10 or 11**, the system Windows PowerShell, and enough free space for temporary components, extracted images and output PDFs. The output folder must be writable.
 
-1. Download **ACC-Windows-2.2.1-win64.exe** from the Buy Me a Coffee link above. Extract it first if provided in a ZIP.
+1. Download **ACC-Windows-2.2.2-win64.exe** from the Buy Me a Coffee page above. Extract it first if provided in a ZIP.
 2. Save the EXE in a folder of your choice.
 3. Double-click it **as a regular user** and allow it to prepare its included components.
 4. Drag a CBZ or CBR comic into the window and click **Convert**.
@@ -155,7 +157,7 @@ The app detects the Windows display language and supports **English, Italian, Sp
 | --- | --- |
 | Drag and drop fails | Run the EXE as a regular user, or use Add files / Add folder. |
 | The window does not open | Allow initial preparation to finish, then check any error message and the startup log below. |
-| Python or rarfile is reported missing | Check that you launched the downloaded 2.2.1 EXE, which includes both. |
+| Python or rarfile is reported missing | Check that you launched the downloaded 2.2.2 EXE, which includes both. |
 | A comic fails | Select its row and open the log. Check for a damaged/encrypted archive or unreadable images. |
 | A PDF already exists | Check whether it is Already verified; enable Replace existing PDFs to recreate it. |
 | Cannot write output | Choose a writable folder and check free disk space. |
@@ -172,7 +174,7 @@ Default limits are 20,000 archive entries, 10 GiB declared uncompressed size and
 
 Close the app and use the new EXE downloaded from Buy Me a Coffee. Saved comics and PDFs stay in their folders.
 
-The repository's `Install-Dependencies.ps1` and `Check-Dependencies.ps1` belong to the earlier distribution. Follow this guide for the portable 2.2.1 edition, which includes its dependencies. The new conversion engine does not require ImageMagick, Ghostscript or PDFtk.
+The repository's `Install-Dependencies.ps1` and `Check-Dependencies.ps1` belong to the earlier distribution. Follow this guide for the portable 2.2.2 edition, which includes its dependencies. The new conversion engine does not require ImageMagick, Ghostscript or PDFtk.
 
 ## Video
 

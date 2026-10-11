@@ -7,6 +7,56 @@ e questo progetto aderisce al [Semantic Versioning](https://semver.org/lang/it/)
 
 ---
 
+## 2.2.2 — 2026-10-11
+
+- Il motore riconosce ZIP e RAR dal contenuto, anche se l'estensione CBZ/CBR è scambiata. I file originali restano invariati.
+
+## 2.2.1 — 2026-10-08
+
+- Rimosse dal launcher le richieste `-WindowStyle Hidden` e `HideWindow`, mantenendo `CREATE_NO_WINDOW` per la console. È una correzione di un possibile problema di visibilità; la causa dell’EXE silenzioso dell’utente e la risoluzione nativa restano da confermare.
+- Cartella portatile con `Avvia-ACC.cmd`, script GUI, Python, rarfile e 7-Zip inclusi, esportabile con `--script-share`.
+
+## 2.2.0 — 2026-10-08
+
+- Rilevamento automatico della lingua di Windows: EN, IT, ES, DE e FR, con inglese per lingue non supportate. Tradotti GUI, accessibilità, stati, riepiloghi, CLI e messaggi dell'installer; parametro `-Language` negli script per una scelta esplicita.
+- `rarfile` confermato nei requisiti e incorporato nell'EXE. Il controllo CBR indica `python -m pip install rarfile` quando il modulo manca; il portatile non richiede pip.
+- Cartella pulita `Condividere/ACC-Windows-2.2.0` con solo EXE, checksum e istruzioni multilingua, più ZIP pronto da condividere. Build riproducibile con `--share`.
+
+## [2.1.0] - 2026-10-07
+
+### Aggiunto
+
+- Eseguibile portatile Windows in un unico file, con Python 3.14.8, moduli PDF e 7-Zip 26.04 inclusi; build riproducibile tramite `build_windows.py`, checksum e manifesto dei file.
+- Avviatore nativo esclusivamente x64 con verifica SHA-256 dei file estratti, PowerShell di sistema, codici di errore preservati e test dell'intero EXE tramite `--self-test` con conversioni CBZ/CBR.
+- Riconoscimento prioritario delle dipendenze incluse, gestione visibile degli errori di avvio.
+- Motore Python condiviso tra GUI e CLI, con creazione PDF diretta e verifica delle pagine.
+- GUI ridimensionabile con stato per fumetto, barra di avanzamento, destinazione opzionale, timeout, annullamento, ripetizione dei falliti e apertura PDF/log.
+- Avvio tramite `Avvia-ACC.cmd`, controlli dipendenze JSON e verifica dei collegamenti ufficiali senza installazione.
+
+### Risolto
+
+- Errore PowerShell 7 nel passaggio di scriptblock ai processi paralleli: entrambe le versioni usano ora lo stesso pool di runspace.
+- Pagine ordinate come `1, 10, 2`, capitoli mescolati e perdita di immagini con nomi temporanei o duplicati.
+- Gestione dei percorsi contenenti spazi, parentesi quadre e caratteri Unicode.
+- Successi apparenti con immagini mancanti, PDF vuoti saltati e PDF finali lasciati incompleti dopo un errore.
+- Sovrascritture concorrenti e pulizia di cartelle temporanee appartenenti ad altre istanze.
+- Timeout bloccati da output continuo o pipe ereditate; annullamento e modifica dell'archivio durante il controllo di PDF esistenti.
+- Perdita di risultati dopo errori di scrittura del log e fallimento dello SKIP in cartelle di sola lettura.
+- Installazioni dichiarate riuscite dopo errori Chocolatey, timeout o mancata verifica degli strumenti; gestione dei codici di riavvio.
+- Compatibilità con le API pikepdf 9 e 10.
+
+### Modificato
+
+- I PDF sono pubblicati atomicamente e quelli esistenti sono saltati solo dopo verifica strutturale, decodifica delle immagini, conteggio pagine e impronta dell'origine.
+- Le immagini sono incorporate senza passaggio forzato a JPEG; GIF animate limitate al primo fotogramma.
+- Dipendenze semplificate: Python, img2pdf, pikepdf e Pillow; rarfile e 7-Zip/unrar per CBR. ImageMagick, Ghostscript e PDFtk non sono piu necessari.
+- Ambiente Python dedicato in LOCALAPPDATA, log separati per batch e concorrenza automatica limitata a quattro fumetti.
+- Documentazione aggiornata con comandi validi, limiti, migrazione dei PDF precedenti e risultati della verifica.
+
+Le sezioni seguenti descrivono le implementazioni precedenti. Per requisiti e comportamento attuali consultare il README della versione 2.1.0.
+
+---
+
 ## [2.0.0] - 2025-12-21
 
 ### ✨ Aggiunto
