@@ -11,7 +11,7 @@ Converts **CBZ and CBR comics to PDF** through a Windows graphical interface.
 
 https://buymeacoffee.com/fconidi/e/491165
 
-<img width="230" height="230" alt="ACC-W-QR" src="https://github.com/user-attachments/assets/0f4c13b6-bf73-4fd8-a0e0-a8fac2ad4fa8" />
+<img width="230" height="230" alt="ACC-Windows QR" src="https://github.com/user-attachments/assets/0f4c13b6-bf73-4fd8-a0e0-a8fac2ad4fa8" />
 
 ## Italiano
 
@@ -178,7 +178,7 @@ The repository's `Install-Dependencies.ps1` and `Check-Dependencies.ps1` belong 
 
 Video dimostrativo della versione precedente / Demonstration of the previous version:
 
-[![Advanced Comics Converter (ACC-W)](https://img.youtube.com/vi/4k-5JvSYeko/hqdefault.jpg)](https://www.youtube.com/watch?v=4k-5JvSYeko)
+[![Advanced Comics Converter (ACC-Windows)](https://img.youtube.com/vi/4k-5JvSYeko/hqdefault.jpg)](https://www.youtube.com/watch?v=4k-5JvSYeko)
 
 ## Autore / Author
 
