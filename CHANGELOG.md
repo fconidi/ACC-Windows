@@ -13,8 +13,9 @@ e questo progetto aderisce al [Semantic Versioning](https://semver.org/lang/it/)
 
 ## 2.2.1 — 2026-10-08
 
-- Rimosse dal launcher le richieste `-WindowStyle Hidden` e `HideWindow`, mantenendo `CREATE_NO_WINDOW` per la console. È una correzione di un possibile problema di visibilità; la causa dell’EXE silenzioso dell’utente e la risoluzione nativa restano da confermare.
+- Rimosse dal launcher le richieste `-WindowStyle Hidden` e `HideWindow`, mantenendo `CREATE_NO_WINDOW` per la console.
 - Cartella portatile con `Avvia-ACC.cmd`, script GUI, Python, rarfile e 7-Zip inclusi, esportabile con `--script-share`.
+- `Avvia-ACC.cmd` usa Start; gli errori vengono registrati anche se il modulo di lingua manca. `-NoErrorDialog` permette il controllo automatico senza finestre di errore.
 
 ## 2.2.0 — 2026-10-08
 
@@ -27,7 +28,7 @@ e questo progetto aderisce al [Semantic Versioning](https://semver.org/lang/it/)
 ### Aggiunto
 
 - Eseguibile portatile Windows in un unico file, con Python 3.14.8, moduli PDF e 7-Zip 26.04 inclusi; build riproducibile tramite `build_windows.py`, checksum e manifesto dei file.
-- Avviatore nativo esclusivamente x64 con verifica SHA-256 dei file estratti, PowerShell di sistema, codici di errore preservati e test dell'intero EXE tramite `--self-test` con conversioni CBZ/CBR.
+- Avviatore nativo esclusivamente x64 con verifica SHA-256 dei file estratti, PowerShell di sistema, codici di errore preservati.
 - Riconoscimento prioritario delle dipendenze incluse, gestione visibile degli errori di avvio.
 - Motore Python condiviso tra GUI e CLI, con creazione PDF diretta e verifica delle pagine.
 - GUI ridimensionabile con stato per fumetto, barra di avanzamento, destinazione opzionale, timeout, annullamento, ripetizione dei falliti e apertura PDF/log.
@@ -200,7 +201,6 @@ Le sezioni seguenti descrivono le implementazioni precedenti. Per requisiti e co
 - Proof of concept iniziale
 - Script PowerShell base
 - Conversione singola CBZ → PDF
-- Test ImageMagick + img2pdf
 
 ---
 
