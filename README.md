@@ -96,7 +96,7 @@ Per segnalare un problema, indica versione dell'app, versione di Windows, format
 
 Per aggiornare, chiudi il programma e usa il nuovo EXE scaricato da Buy Me a Coffee. I fumetti e i PDF già salvati restano nelle rispettive cartelle.
 
-Gli script `Install-Dependencies.ps1` e `Check-Dependencies.ps1` presenti nel repository appartengono alla distribuzione precedente. Per la versione portatile 2.3.0 segui questa guida: Python, moduli PDF e decoder CBR sono già inclusi. ImageMagick, Ghostscript e PDFtk non sono necessari al nuovo motore.
+Nella versione portatile 2.3.0 Python, moduli PDF e decoder CBR sono già inclusi. ImageMagick, Ghostscript e PDFtk non sono necessari al nuovo motore.
 
 ## English
 
@@ -176,7 +176,7 @@ Default limits are 20,000 archive entries, 10 GiB declared uncompressed size and
 
 Close the app and use the new EXE downloaded from Buy Me a Coffee. Saved comics and PDFs stay in their folders.
 
-The repository's `Install-Dependencies.ps1` and `Check-Dependencies.ps1` belong to the earlier distribution. Follow this guide for the portable 2.3.0 edition, which includes its dependencies. The new conversion engine does not require ImageMagick, Ghostscript or PDFtk.
+The portable 2.3.0 edition already includes Python, the PDF modules and the CBR decoder. The conversion engine does not require ImageMagick, Ghostscript or PDFtk.
 
 ## Video
 
