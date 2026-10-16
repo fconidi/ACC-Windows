@@ -7,6 +7,11 @@ e questo progetto aderisce al [Semantic Versioning](https://semver.org/lang/it/)
 
 ---
 
+## 2.3.0 — 2026-10-16
+
+- Nuova opzione «Includi sottocartelle» nella GUI (attiva di default, vale al momento dell'aggiunta di una cartella) e `-NoRecursive` nello script da PowerShell: una cartella può essere aggiunta con tutte le sue sottocartelle oppure solo con i fumetti al suo interno. Il comportamento predefinito non cambia.
+- New "Include subfolders" option in the GUI (on by default, applied when a folder is added) and `-NoRecursive` in the PowerShell script: add a folder with all its subfolders or only the comics directly inside it. The default behavior is unchanged.
+
 ## 2.2.2 — 2026-10-11
 
 - Il motore riconosce ZIP e RAR dal contenuto, anche se l'estensione CBZ/CBR è scambiata. I file originali restano invariati.
