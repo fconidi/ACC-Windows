@@ -57,7 +57,7 @@ e questo progetto aderisce al [Semantic Versioning](https://semver.org/lang/it/)
 - Le immagini sono incorporate senza passaggio forzato a JPEG; GIF animate limitate al primo fotogramma.
 - Dipendenze semplificate: Python, img2pdf, pikepdf e Pillow; rarfile e 7-Zip/unrar per CBR. ImageMagick, Ghostscript e PDFtk non sono piu necessari.
 - Ambiente Python dedicato in LOCALAPPDATA, log separati per batch e concorrenza automatica limitata a quattro fumetti.
-- Documentazione aggiornata con comandi validi, limiti, migrazione dei PDF precedenti e risultati della verifica.
+- Documentazione aggiornata con comandi validi, limiti e migrazione dei PDF precedenti.
 
 Le sezioni seguenti descrivono le implementazioni precedenti. Per requisiti e comportamento attuali consultare il README della versione 2.1.0.
 
@@ -160,9 +160,8 @@ Le sezioni seguenti descrivono le implementazioni precedenti. Per requisiti e co
 #### Architettura
 - **3 versioni**: Simple (CLI), GUI, Linux (bash)
 - **Modularità**: Funzioni core identiche tra versioni
-- **Testabilità**: Ogni componente isolato e verificabile
 
-#### Dipendenze Verificate
+#### Dipendenze
 - Python 3.14.0 ✅
 - ImageMagick 7.1.2-10 ✅
 - img2pdf 0.6.3 ✅
